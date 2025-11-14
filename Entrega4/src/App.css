@@ -1,0 +1,47 @@
+#root {
+  max-width: 1400px;       /* limite maior */
+  margin: 2rem auto;       /* margem superior/inferior adicionada */
+  padding: 3rem;           /* padding ampliado */
+  text-align: center;
+  background: #f4f6fa;     /* nova cor de fundo */
+  border-radius: 12px;     /* novo limite arredondado */
+}
+
+.logo {
+  height: 7em;             /* maior */
+  padding: 2em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3b6df0aa);  /* cor azul mais vibrante */
+  transform: scale(1.05);                  /* leve zoom */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #00d8ffaa);   /* react azul claro */
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 16s linear; /* mais rápido */
+  }
+}
+
+.card {
+  padding: 2.5em;           /* mais espaçamento */
+  margin: 1.5em auto;       /* margem entre cards */
+  background: white;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.read-the-docs {
+  color: #4a4a4a;           /* cor mais visível */
+  font-weight: 500;
+}
